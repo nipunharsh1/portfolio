@@ -200,6 +200,8 @@ section {
     width: 35vw;
     max-width: 450px;
     animation: floatImage 4s ease-in-out infinite;
+    will-change: transform;
+    backface-visibility: hidden;
 }
 
 @keyframes floatImage {
@@ -207,7 +209,7 @@ section {
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-2.4rem);
+        transform: translateY(-24px);
     }
     100% {
         transform: translateY(0);

@@ -249,3 +249,35 @@ function preloadImages() {
 
 // Call preload on page load
 window.addEventListener('load', preloadImages);
+
+// Enhanced Typewriter Effect
+function initTypewriter() {
+    const typewriterElement = document.getElementById('typewriter');
+    if (!typewriterElement) return;
+    
+    const text = 'Nipun Harshana';
+    let index = 0;
+    
+    // Clear the text initially
+    typewriterElement.textContent = '';
+    typewriterElement.style.borderRight = '3px solid var(--main-color)';
+    
+    function typeCharacter() {
+        if (index < text.length) {
+            typewriterElement.textContent += text.charAt(index);
+            index++;
+            setTimeout(typeCharacter, 150); // Adjust speed here (150ms per character)
+        } else {
+            // Start blinking cursor after typing is complete
+            setTimeout(() => {
+                typewriterElement.style.animation = 'blink-caret 0.75s step-end infinite';
+            }, 500);
+        }
+    }
+    
+    // Start typing after a short delay
+    setTimeout(typeCharacter, 1000);
+}
+
+// Initialize typewriter effect when page loads
+window.addEventListener('load', initTypewriter);

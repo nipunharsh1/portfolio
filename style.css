@@ -197,11 +197,10 @@ section {
 }
 
 .home-img img {
-    width: 35vw;
-    max-width: 450px;
+    width: 25vw;
+    
     animation: floatImage 4s ease-in-out infinite;
-    will-change: transform;
-    backface-visibility: hidden;
+   
 }
 
 @keyframes floatImage {

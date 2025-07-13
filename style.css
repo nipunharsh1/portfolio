@@ -420,6 +420,32 @@ section {
     color: var(--snd-bg-color);
 }
 
+/* Project Technology Tags */
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+    justify-content: center;
+}
+
+.tech-tag {
+    background: rgba(255, 255, 255, 0.2);
+    color: var(--text-color);
+    padding: 0.3rem 0.8rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.tech-tag:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
 /* EDUCATION SECTION */
 .education {
     display: flex;

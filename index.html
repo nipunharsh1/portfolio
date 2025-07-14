@@ -6,41 +6,43 @@
     <title>Nipun Harshana  CS </title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" >
+    <meta name="description" content="Nipun Harshana - CS Undergraduate Student Portfolio">
+    <meta name="keywords" content="portfolio, web developer, computer science, student">
 </head>
 <body>
     <header class="header">
         <a href="#" class="logo">portfolio</a>
 
-        <i class="fa-solid fa-bars"id="menu icon"></i>
+        <i class="fa-solid fa-bars" id="menu-icon" tabindex="0" role="button" aria-label="Toggle navigation menu"></i>
 
         <nav class="navbar">
-            <a href="#Home" class="active">Home</a>
-            <a href="#About Me">About Me</a>
-            <a href="#Services">Services</a>
-            <a href="#Portfolio">Portfolio</a>
-            <a href="#Education">Education</a>
-            <a href="#Activities">Activities</a>
-            <a href="#Achievements">Achievements</a>
-            <a href="#Contact">Contact</a>
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#education">Education</a>
+            <a href="#activities">Activities</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
     
 
-    <section class="home" id="Home">
+    <section class="home" id="home">
         <div class="home-content">
             <h3>Hi,</h3>
-            <h1>I'm <span class="name-highlight">Nipun Harshana</span></h1>
+            <h1>I'm <span class="name-highlight typewriter" id="typewriter">Nipun Harshana</span></h1>
             <p>CS Undergraduate Student</p>
             
             
             
             <div class="social-media">
 
-                <a href="#linkedin"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#facebook"><i class="fa-brands fa-square-facebook"></i></a>
-                <a href="#twitter"><i class="fa-brands fa-square-x-twitter"></i></a>
-                <a href="#instagram"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#linkedin" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#facebook" aria-label="Facebook Profile"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#twitter" aria-label="Twitter Profile"><i class="fa-brands fa-square-x-twitter"></i></a>
+                <a href="#instagram" aria-label="Instagram Profile"><i class="fa-brands fa-square-instagram"></i></a>
 
             </div>
 
@@ -59,7 +61,7 @@
     </section>
 
     <!--About section-->
-    <section class="about" id="About Me">
+    <section class="about" id="about">
         <div class="about-img">
             <img src="./Layer 3.png" alt="Nipun Harshana">
         </div>
@@ -161,7 +163,7 @@
     </section>
 
     <!-- EDUCATION & SKILLS SECTION -->
-    <section class="education" id="Education">
+    <section class="education" id="education">
         <h2 class="heading">Education & <span>Skills</span></h2>
         
         <div class="education-container">
@@ -219,7 +221,7 @@
     </section>
 
     <!-- EXTRA-CURRICULAR ACTIVITIES SECTION -->
-    <section class="activities" id="Activities">
+    <section class="activities" id="activities">
         <h2 class="heading">Extra-Curricular <span>Activities</span></h2>
         
         <div class="activities-container">
@@ -256,7 +258,7 @@
     </section>
 
     <!-- ACHIEVEMENTS SECTION -->
-    <section class="achievements" id="Achievements">
+    <section class="achievements" id="achievements">
         <h2 class="heading">My <span>Achievements</span></h2>
         
         <div class="achievements-container">
@@ -298,19 +300,19 @@
     </section>
 
     <!-- CONTACT SECTION DESIGN -->
-<section class="contact" id="Contact">
+<section class="contact" id="contact">
     <h2 class="heading">Contact <span>Me!</span></h2>
 
-    <form action="#" class="contact-form">
+    <form action="#" class="contact-form" novalidate>
         <div class="input-box">
-            <input type="text" placeholder="Full Name" required>
-            <input type="email" placeholder="Email Address" required>
+            <input type="text" name="name" placeholder="Full Name" required aria-label="Full Name">
+            <input type="email" name="email" placeholder="Email Address" required aria-label="Email Address">
         </div>
         <div class="input-box">
-            <input type="tel" name="mobile" placeholder="Mobile Number">
-            <input type="text" name="subject" placeholder="Email Subject">
+            <input type="tel" name="mobile" placeholder="Mobile Number" aria-label="Mobile Number">
+            <input type="text" name="subject" placeholder="Email Subject" aria-label="Email Subject">
         </div>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+        <textarea name="message" cols="30" rows="10" placeholder="Your Message" required aria-label="Your Message"></textarea>
         <input type="submit" value="Send Message" class="btn">
     </form>
 </section>
@@ -322,7 +324,7 @@
     </div>
 
     <div class="footer-iconTop">
-        <a href="#Home"><i class="fa-solid fa-angle-up"></i></a>
+        <a href="#home" aria-label="Back to top"><i class="fa-solid fa-angle-up"></i></a>
     </div>
 </footer>
 

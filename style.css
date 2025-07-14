@@ -358,6 +358,9 @@ section {
 .portfolio-box {
     position: relative;
     border-radius: 2rem;
+    width: 100%;
+    min-height: 350px;
+    aspect-ratio: 1 / 1;
     box-shadow: 0 0 1rem var(--bg-color);
     overflow: hidden;
     display: flex;

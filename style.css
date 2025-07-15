@@ -112,7 +112,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 12rem;
+    gap: 6rem;
     padding: 0 9%;
 }
 
@@ -132,6 +132,13 @@ section {
     font-weight: 700;
     line-height: 1.3;
     margin-bottom: 1rem;
+}
+
+.home-content h3 {
+    font-size: 4.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--text-color);
 }
 
 .name-highlight {
@@ -956,7 +963,7 @@ section {
     .home {
         flex-direction: column;
         text-align: center;
-        gap: 6rem;
+        gap: 3rem;
     }
     
     .home-content {
@@ -972,7 +979,7 @@ section {
     }
     
     .home-content h3 {
-        font-size: 2.6rem;
+        font-size: 3.5rem;
     }
     
     .home-content h1 {
@@ -983,7 +990,7 @@ section {
         width: 60vw;
         max-width: 300px;
         min-width: 200px;
-        margin-bottom: 4rem;
+        margin-bottom: 2rem;
         object-fit: contain;
     }
     
@@ -1075,14 +1082,14 @@ section {
     }
     
     .home-content h3 {
-        font-size: 2.2rem;
+        font-size: 3rem;
     }
     
     .home-img img {
         width: 75vw;
         max-width: 250px;
         min-width: 160px;
-        margin-bottom: 6rem;
+        margin-bottom: 1.5rem;
     }
     
     .about-img img {

@@ -248,6 +248,22 @@ section {
     
     animation: floatImage 4s ease-in-out infinite;
    
+    .contact-info h3, .social-links h3 {
+        font-size: 2rem;
+    }
+    
+    .contact-item-content h4 {
+        font-size: 1.4rem;
+    }
+    
+    .contact-item-content p {
+        font-size: 1.2rem;
+    }
+    
+    .social-item span {
+        font-size: 1.4rem;
+    }
+    
 }
 
 @keyframes floatImage {
@@ -780,7 +796,134 @@ section {
 }
 
 .contact .heading {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.contact .heading::before {
+    content: '✉️';
+    font-size: 4rem;
+}
+
+.contact-intro {
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-bottom: 5rem;
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 4rem;
+    margin-bottom: 5rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-info, .social-links {
+    background: var(--bg-color);
+    padding: 3rem 2.5rem;
+    border-radius: 2rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease;
+}
+
+.contact-info:hover, .social-links:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+}
+
+.contact-info h3, .social-links h3 {
+    font-size: 2.4rem;
+    color: var(--text-color);
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: 0.3s ease;
+}
+
+.contact-item:hover {
+    background: var(--snd-bg-color);
+}
+
+.contact-item i {
+    font-size: 2rem;
+    color: var(--main-color);
+    width: 30px;
+    text-align: center;
+}
+
+.contact-item-content h4 {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.contact-item-content p {
+    font-size: 1.4rem;
+    color: #bbb;
+    margin: 0;
+}
+
+.social-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: 0.3s ease;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.social-item:hover {
+    background: var(--snd-bg-color);
+    transform: translateX(0.5rem);
+}
+
+.social-item i {
+    font-size: 2rem;
+    color: var(--main-color);
+    width: 30px;
+    text-align: center;
+}
+
+.social-item span {
+    font-size: 1.6rem;
+    color: var(--text-color);
+}
+
+.send-message-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.send-message-btn .btn {
+    font-size: 1.8rem;
+    padding: 1.5rem 3rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 .contact-form {
@@ -1083,6 +1226,26 @@ section {
     
     .heading {
         font-size: 4rem;
+    }
+    
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .contact-info, .social-links {
+        padding: 2rem 1.5rem;
+    }
+    
+    .contact-item, .social-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .contact-intro {
+        font-size: 1.6rem;
+        margin-bottom: 3rem;
     }
 }
 

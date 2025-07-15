@@ -1275,3 +1275,46 @@ section {
         transform: translateY(0);
     }
 }
+
+/* Fix 1: Modify the typewriter effect for mobile */
+@media (max-width: 768px) {
+    .typewriter {
+        margin: 0;
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    /* Ensure social media stays centered */
+    .social-media {
+        justify-content: center;
+        width: 100%;
+        margin: 3rem auto;
+    }
+    
+    /* Fix home content centering */
+    .home-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .home-content p {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+/* Fix 2: Alternative - Disable typewriter on mobile */
+@media (max-width: 768px) {
+    .typewriter {
+        animation: none;
+        border-right: none;
+        white-space: normal;
+        overflow: visible;
+        width: auto;
+        text-align: center;
+    }
+}

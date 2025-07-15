@@ -1327,7 +1327,7 @@ section {
     }
 }
 
-/* Fix 1: Modify the typewriter effect for mobile */
+/*: Modify the typewriter effect for mobile */
 @media (max-width: 768px) {
     .typewriter {
         margin: 0;

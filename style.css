@@ -991,11 +991,15 @@ section {
     }
     
     .home-img img {
-        width: 60vw;
-        max-width: 300px;
-        min-width: 200px;
+        width: 50vw;
+        max-width: 280px;
+        min-width: 220px;
+        height: auto;
         margin-bottom: 2rem;
-        object-fit: contain;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 50%;
+        aspect-ratio: 1 / 1;
     }
     
     .about {
@@ -1060,10 +1064,12 @@ section {
 /* Mobile Portrait (up to 575px) */
 @media (max-width: 617px) {
     .home-img img {
-        width: 70vw;
-        max-width: 280px;
-        min-width: 180px;
+        width: 55vw;
+        max-width: 250px;
+        min-width: 200px;
         margin-bottom: 5rem;
+        height: auto;
+        aspect-ratio: 1 / 1;
     }
     
     .about-img img {
@@ -1090,10 +1096,12 @@ section {
     }
     
     .home-img img {
-        width: 75vw;
-        max-width: 250px;
-        min-width: 160px;
+        width: 60vw;
+        max-width: 220px;
+        min-width: 180px;
         margin-bottom: 1.5rem;
+        height: auto;
+        aspect-ratio: 1 / 1;
     }
     
     .about-img img {
@@ -1158,9 +1166,11 @@ section {
 /* Extra Small Mobile (up to 365px) */
 @media (max-width: 365px) {
     .home-img img {
-        width: 80vw;
-        max-width: 220px;
-        min-width: 140px;
+        width: 65vw;
+        max-width: 200px;
+        min-width: 160px;
+        height: auto;
+        aspect-ratio: 1 / 1;
     }
     
     .about-img img {
@@ -1196,11 +1206,17 @@ section {
     .home-img {
         flex: 1;
         order: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     .home-img img {
-        width: 50vw;
-        max-width: 300px;
+        width: 45vw;
+        max-width: 250px;
+        min-width: 180px;
+        height: auto;
+        aspect-ratio: 1 / 1;
     }
     
     section {

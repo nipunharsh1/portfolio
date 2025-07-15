@@ -230,6 +230,10 @@ section {
 
 .home-img img {
     width: 25vw;
+    max-width: 400px;
+    min-width: 250px;
+    height: auto;
+    object-fit: contain;
     
     animation: floatImage 4s ease-in-out infinite;
    
@@ -961,6 +965,10 @@ section {
     
     .home-img {
         order: 1;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     .home-content h3 {
@@ -972,8 +980,11 @@ section {
     }
     
     .home-img img {
-        width: 70vw;
+        width: 60vw;
+        max-width: 300px;
+        min-width: 200px;
         margin-top: 2rem;
+        object-fit: contain;
     }
     
     .about {
@@ -1038,7 +1049,9 @@ section {
 /* Mobile Portrait (up to 575px) */
 @media (max-width: 617px) {
     .home-img img {
-        width: 80vw;
+        width: 70vw;
+        max-width: 280px;
+        min-width: 180px;
     }
     
     .about-img img {
@@ -1065,7 +1078,9 @@ section {
     }
     
     .home-img img {
-        width: 90vw;
+        width: 75vw;
+        max-width: 250px;
+        min-width: 160px;
     }
     
     .about-img img {
@@ -1130,7 +1145,9 @@ section {
 /* Extra Small Mobile (up to 365px) */
 @media (max-width: 365px) {
     .home-img img {
-        width: 95vw;
+        width: 80vw;
+        max-width: 220px;
+        min-width: 140px;
     }
     
     .about-img img {

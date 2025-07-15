@@ -58,6 +58,9 @@ section {
     z-index: 100;
     transition: all 0.3s ease;
 }
+.hi{
+    font-family:Arial, Helvetica, sans-serif;
+}
 
 .logo {
     font-size: 2.5rem;

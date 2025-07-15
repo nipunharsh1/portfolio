@@ -112,7 +112,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 8rem;
+    gap: 12rem;
     padding: 0 9%;
 }
 
@@ -956,7 +956,7 @@ section {
     .home {
         flex-direction: column;
         text-align: center;
-        gap: 3rem;
+        gap: 6rem;
     }
     
     .home-content {
@@ -983,7 +983,7 @@ section {
         width: 60vw;
         max-width: 300px;
         min-width: 200px;
-        margin-top: 2rem;
+        margin-bottom: 4rem;
         object-fit: contain;
     }
     
@@ -1052,6 +1052,7 @@ section {
         width: 70vw;
         max-width: 280px;
         min-width: 180px;
+        margin-bottom: 5rem;
     }
     
     .about-img img {
@@ -1081,6 +1082,7 @@ section {
         width: 75vw;
         max-width: 250px;
         min-width: 160px;
+        margin-bottom: 6rem;
     }
     
     .about-img img {

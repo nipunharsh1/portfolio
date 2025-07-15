@@ -112,7 +112,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 8rem;
+    gap: 6rem;
     padding: 0 9%;
 }
 
@@ -132,6 +132,13 @@ section {
     font-weight: 700;
     line-height: 1.3;
     margin-bottom: 1rem;
+}
+
+.home-content h3 {
+    font-size: 4.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--text-color);
 }
 
 .name-highlight {
@@ -230,6 +237,10 @@ section {
 
 .home-img img {
     width: 25vw;
+    max-width: 400px;
+    min-width: 250px;
+    height: auto;
+    object-fit: contain;
     
     animation: floatImage 4s ease-in-out infinite;
    
@@ -961,10 +972,14 @@ section {
     
     .home-img {
         order: 1;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     .home-content h3 {
-        font-size: 2.6rem;
+        font-size: 3.5rem;
     }
     
     .home-content h1 {
@@ -972,8 +987,11 @@ section {
     }
     
     .home-img img {
-        width: 70vw;
-        margin-top: 2rem;
+        width: 60vw;
+        max-width: 300px;
+        min-width: 200px;
+        margin-bottom: 2rem;
+        object-fit: contain;
     }
     
     .about {
@@ -1038,7 +1056,10 @@ section {
 /* Mobile Portrait (up to 575px) */
 @media (max-width: 617px) {
     .home-img img {
-        width: 80vw;
+        width: 70vw;
+        max-width: 280px;
+        min-width: 180px;
+        margin-bottom: 5rem;
     }
     
     .about-img img {
@@ -1061,11 +1082,14 @@ section {
     }
     
     .home-content h3 {
-        font-size: 2.2rem;
+        font-size: 3rem;
     }
     
     .home-img img {
-        width: 90vw;
+        width: 75vw;
+        max-width: 250px;
+        min-width: 160px;
+        margin-bottom: 1.5rem;
     }
     
     .about-img img {
@@ -1130,7 +1154,9 @@ section {
 /* Extra Small Mobile (up to 365px) */
 @media (max-width: 365px) {
     .home-img img {
-        width: 95vw;
+        width: 80vw;
+        max-width: 220px;
+        min-width: 140px;
     }
     
     .about-img img {
